@@ -1,0 +1,35 @@
+{
+    "name": "acrossoffwest/morhpy-wrapper",
+    "description": "Wrapper for phpMorphy",
+    "keywords": [
+        "phpMorphy", "russian", "vocabulary", "english", "german", "ukrainian"
+    ],
+    "license": "MIT",
+    "type": "library",
+    "require": {
+        "php": ">=7.4.0"
+    },
+    "authors": [
+        {
+            "name": "Iurii Karpov",
+            "email": "acrossoffwest@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^9.1"
+    },
+    "autoload": {
+        "classmap": [
+            "libs/phpmorphy/src/common.php",
+            "libs/phpmorphy/src/"
+        ],
+        "psr-4": {
+            "Acrossoffwest\\MorphyWrapper\\": "src",
+            "Acrossoffwest\\MorphyWrapper\\Tests\\": "tests"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    }
+}
